@@ -1,0 +1,124 @@
+* {
+     margin:0px;
+     padding: 0px;
+     border: 0px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+     user-select: none;
+     
+    font-family:Segoe UI,Tahoma,Arial;
+    font-size: 12px; 
+ }
+
+ .alignTop {
+     vertical-align: top;
+ }
+
+.formHeader {
+    padding-top: 10px;
+    border-bottom: solid 2px #43464f;
+    height: 80px;
+    background-color: #75706a;
+    color: #e6e0d0;
+    top: 0px;
+    position: absolute;
+    width: 100%;
+}
+.formTitle {
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bolder;
+    font-size: 2.2em;
+    font-family: Segoe UI,Tahoma,Arial;
+    color: #e6e0d0;
+   }
+
+.formSubtitle {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 1.1em;
+    padding-top: 4px;
+    font-family: Segoe UI,Tahoma,Arial;
+    color: #c7b98a;
+}
+
+.formButton {
+    border: 1px solid #43464f;
+    background-color: #75706a;;
+    color: #e6e0d0;
+    font-size: 12px;
+    height: 24px;
+    line-height: 16px;
+    margin-top: 10px;
+    min-width: 80px;
+    margin-left: 8px;
+    text-align: center;
+    white-space: nowrap;
+    width: auto;
+    cursor: pointer;
+}
+
+.formContent {
+    position: absolute;
+    top: 95px;
+    bottom: 45px;
+    overflow: auto;
+    width: 100%;
+    background-color: #75706a;
+    color: #c7b98a;
+    font-size: 12px;
+    font-family: Segoe UI,Tahoma,Arial;
+    vertical-align: top;
+}
+
+.formSection {
+    margin: 10px 30px;
+}
+
+.formFooter {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 44px;
+    border-top: solid 2px #43464f;
+    background-color: #75706a;
+    color: #444;
+    text-align: right;
+}
+
+.formFooterLeft {
+    margin-left: 10px;
+    text-align: left;
+    float: left;
+}
+
+.formFooterRight {
+    margin-right: 10px;
+    text-align: right;
+    float: right;
+}
+
+.textInput {
+    border: 1px solid #43464f;
+    background-color: #e6e0d0;
+    color: #43464f;
+    width: 150px;
+    height: 20px;
+}
+
+.checkInput {
+	border: 1px solid #43464f;
+    background-color: #e6e0d0;
+}
+
+.inputDiv{
+	margin: 10px;
+}
