@@ -1,0 +1,45 @@
+Enter file contents here<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<title>tuffOS: Personal Cloud OS</title>
+	
+		<script src="../jquery/jq.js"></script>
+    	<script src="../jquery/jquery-1.10.2.js"></script>
+    	<script src="../jquery/jquery-ui-1.10.4.js"></script>
+    	<script src="../jquery/jquery-ui-1.10.4.css"></script>
+
+    	<script src="../scripts/structureResize.js"></script>
+    	<script src="../scripts/test.js"></script>
+    	<script src="../scripts/popup.js"></script>
+    	
+    	<link rel="stylesheet" href="../css/desktop-tuffOS.css" />
+	</head>
+	<body>
+		<table id="desktop-base-structure">
+			<tr id="desktop-base-structure-landscape-row">
+				<td id="desktop-base-structure-landscape-column">&nbsp;</td>
+			</tr>
+			<tr id="desktop-base-structure-taskbar-row">
+				<td id="desktop-base-structure-taskbar-column">
+					<table id="desktop-base-structure-taskbar-content">
+						<tr id="desktop-base-structure-taskbar-content-row">
+							<td class="desktop-base-structure-taskbar-content-column" id="taskbar-startmenu-icon"><img id="startIconImg" class="taskbar-icon" src="../images/appbar.os.windows.8.png" /></td>		
+							<td class="desktop-base-structure-taskbar-content-column" id="taskbar-app0-icon"> </td>	
+							<td class="desktop-base-structure-taskbar-content-column" id="taskbar-app1-icon"> </td>
+							<td class="desktop-base-structure-taskbar-content-column" id="taskbar-app2-icon"> </td>
+							<td class="desktop-base-structure-taskbar-content-column" id="taskbar-app3-icon"> </td>
+							<td class="desktop-base-structure-taskbar-content-column" id="taskbar-app4-icon"> </td>
+						</tr>
+					</table>					
+				</td>
+			</tr>
+		</table>
+    	<div id="hiddenPopupContent0"> </div>
+    	<div id="hiddenPopupContent1"> </div>
+    	<div id="hiddenPopupContent2"> </div>
+    	<div id="hiddenPopupContent3"> </div>
+    	<div id="hiddenPopupContent4"> </div>
+	</body>
+</html>
