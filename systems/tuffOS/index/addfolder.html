@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<script src="../jquery/jq.js"></script>
+    <script src="../jquery/jquery-1.10.2.js"></script>
+    <script src="../jquery/jquery-ui-1.10.4.js"></script>
+    <script src="../jquery/jquery-ui-1.10.4.css"></script>
+    
+    <link href="../css/popup.css" rel="stylesheet" />
+    <script>
+        var windowNumber ="";
+        var passedData = [];
+        $(document).ready(function () {  
+            var hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for(var i = 0; i < hashes.length; i++){
+                hash = hashes[i].split('=');
+                passedData.push(hash[0]);
+                passedData[hash[0]] = hash[1];
+                
+            }
+			
+            windowNumber = passedData.windowNumber;
+            
+           $("#createFolder").bind("click", function () {
+                debugger;
+                var phpURL = "../php/submitAddFolder.php";
+                var folderName = $("#newFolderName").val();
+                var folderDBName = $("#newFolderDBName").val();
+                var parentID = " ";
+                var folderCategoryListTable = folderDBName.toLowerCase() + "CategoryListTable";
+                if((selectedFolder == "null") || ($("#rootFolder").is(':checked'))) {
+                    parentID = 0;
+                    folderURLPath = "category.php";
+                 }
+                 else {
+                    parentID = selectedFolder;
+                    folderURLPath = "wallpaper.php";
+                 }
+                 
+                $.post(phpURL, { parentID: parentID, folderName: folderName, folderDBName: folderDBName, folderURLPath: folderURLPath, folderCategoryListTable: folderCategoryListTable },
+                    function (data) {
+                        alert(data);
+                     });
+                });
+        });
+    </script>
+</head>
+<body>
+            <div class="formHeader">
+                <div class="formTitle">Add New Folder</div>
+                <div class="formSubtitle">A new folder will be created in the selected folder. If no folder is selected a root folder will automatically be created. Our current file structure only allows two levels, any folders placed below the second level will not be recognized.</div>
+            </div>
+            <div class="formContent">
+                <div class="formSection">
+                	<table>
+                		<tr>
+                			<td>
+                				<div id="popupFolderTree">
+                					
+                				</div>
+                			</td>
+                			<td>
+                				<div class="inputDiv">Folder Name: &nbsp;&nbsp;&nbsp;<input type="text" id="newFolderName" name="newFolderName" class="textInput" value="" required /></div>
+                    			<div class="inputDiv">Database Name: &nbsp;&nbsp;&nbsp;<input type="text" id="newFolderDBName" name="newFolderDBName" class="textInput" value="" required /></div>
+                    			<div class="inputDiv">Create Root Folder: &nbsp;&nbsp;&nbsp;<input type="checkbox" id="rootFolder" name="rootFolder" value="rootFolder" class="checkInput"></div>
+                    			<div id="dropdownPosition">&nbsp;</div>
+                    		</td>
+                		</tr>
+                	</table>
+
+                </div>
+            </div>
+            <div class="formFooter">
+                <div class="formFooterLeft">
+                </div>
+                <div class="formFooterRight">
+                    <button class="formButton" id="createFolder">Create</button>
+                    <button class="formButton" onclick="window.parent.popup.utilities.hidePopup(windowNumber);">Cancel</button>
+                    <button class="formButton" onclick="window.parent.popup.utilities.minimizePopup(windowNumber);">Minimize</button>
+                </div>
+            </div>
+</body>
+</html>
