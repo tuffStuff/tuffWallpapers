@@ -1,0 +1,228 @@
+/* Default Settings */
+
+* {
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+    border-collapse: collapse;
+
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: -moz-none;
+   -ms-user-select: none;
+   user-select: none;
+     
+   font-family:Segoe UI,Tahoma,Arial;
+   font-size: 12px;   
+}
+
+html {
+	background-color: #e6e0d0;	
+}
+
+body {
+	background-color: #e6e0d0;
+}
+/* Default Settings */
+
+
+/* Desktop Structure Layout */
+
+#desktop-base-structure {
+   background-color: #e6e0d0;
+}
+}
+#desktop-base-structure-landscape-row {
+}
+#desktop-base-structure-landscape-column {
+	
+}
+#desktop-base-structure-taskbar-row {
+	background-color: #43464f;
+}
+#desktop-base-structure-taskbar-column {
+	
+}
+
+.desktop-base-structure-taskbar-content-column {
+	width: 140px;
+}
+
+
+/* Desktop Strcuture Layout */
+
+/* Taskbar Icons*/
+	.taskbar-icon {
+		width: 45px;
+		height: 45px;
+		vertical-align: middle;
+	}
+/* Taskbar Icon*/
+
+/* Start Menu Popup*/
+#startMenuPopup {
+	position:absolute;
+	left:0px;
+	bottom:45px;
+	width: 340px;
+	height: 455px;
+	background-color: #75706a;
+	border-left: 5px solid #43464f;
+	border-right: 5px solid #43464f;
+	border-top: 5px solid #43464f;
+	z-index: 4200;
+}
+
+#startMenuContent {
+	width: 340px;
+	height: 455px;
+}
+
+.startMenuContentBufferRow{
+	height: 50px;
+	width: 100%;
+}
+
+#startMenuContentSection {
+	height: 355px;
+	width: 100%;
+}
+
+#startMenuContentItemLeft{
+	width: 200px;
+	height: 355px;
+	vertical-align: top;
+	border-right: 2px solid #43464f;
+}
+
+#startMenuContentItemRight{
+	vertical-align: top;
+	width: 140px;
+	height: 355px
+}
+
+#startMenuContentBufferTop {
+	width: 340px;
+	border-bottom: 2px solid #43464f;
+	vertical-align: top;
+	text-align: right;
+}
+
+#userName {
+	padding-top: 2px;
+	padding-right: 10px;
+	
+	color: #e6e0d0;
+	font-size: 1.4em;
+	font-weight: bolder;
+}
+#accountType {
+	padding-right: 10px;	
+	color: #c7b98a;
+}
+
+.appName{
+	padding-left: 3px;
+	font-size: 1.2em;
+	font-weight: bolder;
+	color: #c7b98a;
+}
+.appName:hover{
+	color: #e6e0d0;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.subAppName{
+	padding-left: 3px;
+	font-size: 1em;
+	font-weight: bolder;
+	color: #E6E0D0;
+}
+
+.subAppName:hover{
+	color: #c7b98a;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.appPanel {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.appIcon{
+	width:35px;
+	height: 35px;
+}
+
+.subAppIcon{
+	width: 30px;
+	height: 30px;
+}
+
+.selected {
+	color: #e6e0d0;
+	text-decoration: underline;
+}
+
+.unselected {
+	color: #c7b98a;
+	text-decoration: none;
+}
+
+.appListHolder {
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+#startMenuContentBufferBottom {
+	width: 340px;
+	border-top: 2px solid #43464f;
+}
+
+.menuText {
+	color: #E6E0D0;
+	font-weight: bolder;
+}
+
+/******************** Popup Area ********************8*/
+
+#hiddenPopupScreen0, #hiddenPopupScreen1, #hiddenPopupScreen2, #hiddenPopupScreen3, #hiddenPopupScreen4 {
+    display:none;
+}
+#hiddenPopupContent0, #hiddenPopupContent1, #hiddenPopupContent2, #hiddenPopupContent3. #hiddenPopupContent4 {
+    display:none;
+}
+
+#displayedPopupScreen0,#displayedPopupScreen1,#displayedPopupScreen2,#displayedPopupScreen3,#displayedPopupScreen4 {
+    position: absolute;
+    left: 0px;
+    bottom: 40px;
+    width: 100%;
+    height: 100%;
+    z-index: 4000;
+    opacity: .6;
+}
+
+#displayedPopupContent0,#displayedPopupContent1,#displayedPopupContent2,#displayedPopupContent3,#displayedPopupContent4 {
+    border: 5px solid #43464f;
+    position: absolute;
+    left: 21%;
+    top: 12%;
+    width: 750px;
+    height: 450px;
+    background-color: #75706a;
+    opacity: 1;
+    -webkit-box-shadow: 10px 15px 10px #777;
+    -moz-box-shadow: 10px 15px 10px #777;
+    box-shadow: 10px 15px 10px #777;
+    z-index: 4100;
+}
+
+#iframePopup {
+    width:750px;
+    height: 450px;
+}
