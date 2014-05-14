@@ -68,15 +68,15 @@ tuffOS.Menu = {
 			$("#startListApp" + c).bind("click", function(){
 				var sendElement = this;
 				var appObject = [
-					{appIcon: "../images/appbar.folder.png", parentIcon: "../images/appbar.scrabble.t.png", appName: "Add Folder", appPath: "../html/addFolder.html"},
-					{appIcon: "../images/appbar.page.png", parentIcon: "../images/appbar.scrabble.t.png",	appName: "Add Wallpaper", appPath: "../html/addFolder.html"},
-					{appIcon: "../images/appbar.folder.png",  parentIcon: "../images/appbar.scrabble.t.png", appName: "Edit Folder", appPath: "../html/editFolder.html"},
-					{appIcon: "../images/appbar.page.png",  parentIcon: "../images/appbar.scrabble.t.png", appName: "Edit Wallpaper", appPath: "../html/editFolder.html"},
-					{appIcon: "../images/appbar.user.png", parentIcon: "../images/appbar.scrabble.t.png", appName: "Edit User", appPath: "../html/editUser.html"},
-					{appIcon: "../images/appbar.user.png",  parentIcon: "../images/appbar.scrabble.t.png", appName: "Delete User", appPath: "../html/deleteUser.html"},
-					{appIcon: "../images/appbar.list.select.png", parentIcon: "../images/appbar.scrabble.t.png", appName: "Task Lists", appPath: "../html/taskList.html"},
-					{appIcon: "../images/appbar.newspaper.png", parentIcon: "../images/appbar.scrabble.t.png", appName: "View Reports", appPath: "../html/viewReports.html"},
-					{appIcon: "../images/appbar.settings.png", parentIcon: "../images/appbar.scrabble.t.png", appName: "TuffOS Settings", appPath: "html/tuffOSSettings.html"},
+					{appIcon: "../images/appbar.folder.png", parentIcon: "../images/appbar.scrabble.t.png", appName: "Add Folder", appPath: "../index/addFolder.html"},
+					{appIcon: "../images/appbar.page.png", parentIcon: "../images/appbar.scrabble.t.png",	appName: "Add Wallpaper", appPath: "../index/addFolder.html"},
+					{appIcon: "../images/appbar.folder.png",  parentIcon: "../images/appbar.scrabble.t.png", appName: "Edit Folder", appPath: "../index/editFolder.html"},
+					{appIcon: "../images/appbar.page.png",  parentIcon: "../images/appbar.scrabble.t.png", appName: "Edit Wallpaper", appPath: "../index/editFolder.html"},
+					{appIcon: "../images/appbar.user.png", parentIcon: "../images/appbar.scrabble.t.png", appName: "Edit User", appPath: "../index/editUser.html"},
+					{appIcon: "../images/appbar.user.png",  parentIcon: "../images/appbar.scrabble.t.png", appName: "Delete User", appPath: "../index/deleteUser.html"},
+					{appIcon: "../images/appbar.list.select.png", parentIcon: "../images/appbar.scrabble.t.png", appName: "Task Lists", appPath: "../index/taskList.html"},
+					{appIcon: "../images/appbar.newspaper.png", parentIcon: "../images/appbar.scrabble.t.png", appName: "View Reports", appPath: "../index/viewReports.html"},
+					{appIcon: "../images/appbar.settings.png", parentIcon: "../images/appbar.scrabble.t.png", appName: "TuffOS Settings", appPath: "../index/tuffOSSettings.html"},
 				];	
 				
 				tuffOS.Menu.appSubMenuWrite(sendElement, appObject);
